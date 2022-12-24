@@ -1,9 +1,12 @@
-﻿using Exiled.API.Features;
-
-namespace ServerNames
+﻿namespace ServerNames
 {
+    using Exiled.API.Features;
+
     public class EventHandlers
     {
-        public void OnWaitingForPlayers() => Server.Name = ServerNames.Instance.Config.Name ?? Server.Name;
+        public void OnWaitingForPlayers()
+        {
+            Server.Name = ServerNames.Instance.Config.Name ?? Server.Name;
+        }
     }
 }
