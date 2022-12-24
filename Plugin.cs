@@ -12,7 +12,7 @@
         public override string Author => "Remind me";
         public override string Name => "ServerNames";
         public override string Prefix => "Server Names";
-        public override Version Version => new Version(1, 0, 0);
+        public override Version Version => new Version(1, 1, 0);
         public override Version RequiredExiledVersion => new Version(2, 3, 3);
         public static ServerNames Instance { get; } = new ServerNames();
 
